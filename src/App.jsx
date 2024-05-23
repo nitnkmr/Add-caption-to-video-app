@@ -15,7 +15,7 @@ function App() {
     if(url.length){
       setPlay(true)
     }else{
-      alert("Please Enter an URL First")
+      alert("Please Enter an Valid Video URL First")
     }
   }
 
@@ -26,7 +26,7 @@ function App() {
         {play ? <VideoPlayer captionData={captionData} url={url}/> 
         : <Videoform timestamp={timestamp} setTimeStamp={setTimeStamp} captionData={captionData} setCaptionData={setCaptionData} setPlay={setPlay} play={play} setUrl={setUrl} url={url}/>}
       </div>
-    {play?<div className="buttons"><button onClick={()=>handleGenerate()} className='generate btn'>Generate and Play</button> <button className='generate'>Refresh</button></div>:<button onClick={()=>handleGenerate()} className='generate btn'>Generate and Play</button>}
+    {play?<div className="buttons"><button onClick={()=>handleGenerate()} className='generate btn'>Generate and Play</button> <button className='generate' onClick={()=>window.location.reload()}>Refresh</button></div>:<button onClick={()=>handleGenerate()} className='generate btn'>Generate and Play</button>}
     </>
   )
 }

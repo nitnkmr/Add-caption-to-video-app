@@ -14,7 +14,7 @@
   border-radius: 25px;
   backdrop-filter: blur(10px);
   transition: all 0.5s ease-out;
-  background-color: rgba(158, 158, 158, 0.274);
+  background-color: rgba(207, 207, 207, 0.41);
 }
 .buttons{
   width: 50%;
@@ -102,4 +102,8 @@
     height: 10%;
     font-size: 10px;
   }
+}
+
+button:active{
+  background-color: white;
 }

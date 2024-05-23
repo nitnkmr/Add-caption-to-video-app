@@ -28,8 +28,8 @@ const Videoform = ({ timestamp, setTimeStamp, captionData, setCaptionData, setPl
           </div>
           <label htmlFor="caption">Enter Caption Here</label>
           <textarea type="text" name="text" id="text" placeholder='Your Text/Caption' value={timestamp.text} onChange={(e) => setTimeStamp({ ...timestamp, [e.target.name]: e.target.value })} required rows={5}/>
-          <input type="submit" value="Add Tast" />
-          {warn?<p className='warning'>Entry Added please fill new Entry</p>:""}
+          <input type="submit" value="Add Caption" id="submit" />
+          {warn?<p className='warning'>Caption Added to given timestam, Add new caption</p>:""}
         </form >
       </div>
     </>
