@@ -24,7 +24,6 @@
 
   ```
   cd caption-generator
-
   ```
 
 - ### Install dependencies
@@ -39,3 +38,8 @@
   ```
   - Now you select the server from terminal. To expose press Ctrl + Click.
   - In case of any problem i am reachable on +91 8171973123
+
+
+  #### If you are not able to see the caption then click on the following icon
+
+  ![Alt text](./src/assets/Screenshot%202024-05-23%20193901.png "a title")
